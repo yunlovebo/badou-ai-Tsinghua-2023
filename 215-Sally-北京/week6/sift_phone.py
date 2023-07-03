@@ -1,3 +1,5 @@
+# sift算法，标出两图相同特征区域
+
 import cv2
 import numpy as np
 
