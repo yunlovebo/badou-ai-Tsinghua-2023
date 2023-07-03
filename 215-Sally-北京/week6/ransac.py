@@ -1,4 +1,4 @@
-# RANSAC算法，直接copy了老师的代码
+# RANSAC算法，直接copy了老师的代码，复习的时候需要自己再写一遍
 
 import numpy as np
 import scipy as sp
