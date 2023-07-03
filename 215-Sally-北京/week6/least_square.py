@@ -1,3 +1,4 @@
+# 最小二乘法
 import numpy as np
 
 X = [1,2,3,4]
