@@ -1,3 +1,5 @@
+# 均值哈希算法与差值哈希算法
+
 import cv2
 import numpy as np
 
