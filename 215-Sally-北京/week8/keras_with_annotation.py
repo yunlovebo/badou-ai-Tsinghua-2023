@@ -99,6 +99,9 @@ network.fit(train_images, train_labels, epochs=5, batch_size = 128)
 '''
 测试数据输入，检验网络学习后的图片识别效果.
 识别效果与硬件有关（CPU/GPU）.
+每个sample运行时间、loss、accuracy与什么有关？
+- 速度：CPU/GPU
+- loss、accuracy：数据的数量、质量
 '''
 test_loss, test_acc = network.evaluate(test_images, test_labels, verbose=1)
 print(test_loss) 
@@ -106,6 +109,7 @@ print('test_acc', test_acc)
 
 [7]
 '''
+生产环境推理：
 输入一张手写数字图片到网络中，看看它的识别效果
 '''
 (train_images, train_labels), (test_images, test_labels) = mnist.load_data()
@@ -119,10 +123,3 @@ for i in range(res[1].shape[0]):
     if (res[1][i] == 1):
         print("the number for the picture is : ", i)
         break
-
-
-'''
-每个sample运行时间、loss、accuracy与什么有关？
-- 速度：CPU/GPU
-- loss、accuracy：数据的数量、质量
-'''
