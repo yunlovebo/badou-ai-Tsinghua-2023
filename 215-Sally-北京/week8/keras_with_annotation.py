@@ -5,6 +5,7 @@ train_images是用于训练系统的手写数字图片;
 train_labels是用于标注图片的信息;
 test_images是用于检测系统训练效果的图片；
 test_labels是test_images图片对应的数字标签。
+MNIST是手写数字数据集，由6万张训练图片和1万张测试图片构成的，每张图片都是28*28大小（如下图），这些图片是采集的不同的人手写从0到9的数字。
 '''
 from tensorflow.keras.datasets import mnist
 (train_images, train_labels), (test_images, test_labels) = mnist.load_data()
